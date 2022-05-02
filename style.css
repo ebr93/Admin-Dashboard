@@ -28,7 +28,7 @@ p {
 .page {
     height: 100vh;
     display: grid;
-    grid-template-columns: minmax(180px, 20vw) 1fr;
+    grid-template-columns: minmax(200px, 20vw) 1fr;
     grid-template-rows: 150px 1fr;
     grid-template-areas: 
     "sidebar header"
