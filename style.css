@@ -21,7 +21,9 @@ p {
 
 :root{
     --color: #f0f9ff;
-    --bColor: #38bdf8;
+    --bColor: #5aacd5;
+    --darkColor: #222222;
+    --midDarkColor: #474747;
     font-size: calc(0.625rem + 0.4vw);
 }
 
@@ -37,10 +39,10 @@ p {
 
 /* sidebar */
 .sidebar {
-    background-color: #9e9e9e;
+    background-color: var(--bColor);
     grid-area: sidebar;
     display: grid;
-    grid-template: 100px 40vh 10vh 20vh 1fr / 1fr;
+    grid-template: 100px 40vh 1vh 20vh 1fr / 1fr;
     grid-template-areas: 
     "logo"
     "user-btns"
@@ -76,7 +78,7 @@ p {
     grid-area: support-btns;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
 }
 
 .side-row {
@@ -91,7 +93,7 @@ p {
 
 /* header */
 .header {
-    background-color: #98deff;
+    background-color: var(--midDarkColor);
     grid-area: header;
     display: grid;
     grid-template: 1fr 1fr / 2fr 1fr;
@@ -114,8 +116,9 @@ p {
     height: 1.5rem;
     flex: 1;
     border-radius: 10px;
-    background-color: #f0f9ff;
+    background-color: var(--darkColor);
     margin-left: 10px;
+
 }
 
 .search-input {
@@ -145,8 +148,8 @@ p {
     grid-row-gap: 0px;
     grid-column-gap: 0px;
     grid-template: 50px 1fr / minmax(250px, 1fr) minmax(250px, 20vw);
-    box-shadow: inset 0 1px 5px grey;
-    background-color: #d7d7d7;
+    box-shadow: inset 0 1px 5px black;
+    background-color: var(--darkColor);
     grid-template-areas:  
     "title1 title2"
     "main-content side-content";
@@ -154,6 +157,7 @@ p {
 
 .content-container > * {
     padding-left: 0px;
+    color: white;
 }
 
 h2 {
