@@ -103,7 +103,7 @@ p {
 .header > * > * {
     padding-left: 25px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .search-container {
@@ -117,6 +117,7 @@ p {
     flex: 1;
     border-radius: 10px;
     background-color: var(--darkColor);
+    box-shadow: none;
     margin-left: 10px;
 
 }
