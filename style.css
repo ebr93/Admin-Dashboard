@@ -43,7 +43,7 @@ p {
     background-color: var(--bColor);
     grid-area: sidebar;
     display: grid;
-    grid-template: 100px 40vh 5vh 20vh 1fr / 1fr;
+    grid-template: 70px 40vh 5vh 20vh 1fr / 1fr;
     grid-template-areas: 
     "logo"
     "user-btns"
